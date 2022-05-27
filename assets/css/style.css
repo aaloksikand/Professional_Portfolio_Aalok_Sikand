@@ -7,26 +7,21 @@ header
 {
   background-color: #365E14;
   width: 100%; 
-  height: 100px;
+  height: auto;
 }
 
 header h1
 {
-  text-align: left;
-  color: #365E14;
+  text-align: left ;
 }
 
-header nav ul
+header h1 nav ul li
 {
-  color: #66BF11;
-  text-align: right;
-}
-
-header nav ul li
-{
-  color: #66BF11;
-  display: inline;
-  list-style-type: none;
+  color: #66BF11 ;
+  display: inline ;
+  text-align: right ;
+  color: #66BF11 ;
+  list-style-type: none ;
 }
 
 nav a {
@@ -39,45 +34,30 @@ nav a:hover {
   color: #fff;
 }
 
-main section
-{
-  padding: 1em; /*test*/
-  background-color: antiquewhite;
-  border-left-color: #365e14 /*test*/;
-  border-left-width: 1em; /*test*/
-}
 
 .titleBoxes
-/*It appears that title, subtitle, work 1 - 5 title boxes all have these same elements */
 {
   background-color: #66BF11 ;
   color: #365e14 ; 
   text-align: center;
-  padding: 5px;
-  display: inline; /*Only takes as much space as it needs*/
+  display: inline ;
 }
 
 .sectionHeadings /*About Me, Work and Content Me have the same parameters */
 {
-  color: #365e14;
-  font-size: larger;
-  position: relative;
-  text-align:left;
-  /*figure out how to make the sectionHeadings to the left of the actual sections */
+  color: #365e14 ;
+  font-size: larger ;
+  text-align:left ;
 }
 
 .work-container
 {
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: center;
+display: flex ;
+flex-wrap: wrap ;
+flex-direction: column ;
+justify-content: center ;
 }
 
-/*thick border */
-/*back-lit image when you hover */
-/*work 2-5 are same size and probably need to flex*/
-/*Font is the only universal thing*/
 
 /*Check if line-height is necessary*/
 /*Check if height px/width px necessary or better way*/
@@ -85,59 +65,27 @@ justify-content: center;
 
 .work2, .work3, .work4, .work5 img 
 {
-width:  100px;
-height: 100px;
-object-fit: cover;
-}
-
-
-.work
-{
-  border:#66BF11; /*color*/
-  border: 1em; /*test*/ 
+width:  100px ;
+height: 100px ;
+object-fit: cover ;
 }
 
 #bigwork img
 {
-width: 200px;
-height: 200px;
-object-fit: cover;
+width: 200px ;
+height: 200px ;
+object-fit: cover ;
 }
 
 .work2, .work3, .work4, .work5 
 /*WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others*/
 {
- flex: 0 0 90%;
- margin: 10px;
-  /* /*height: */
-  /*border: #66bf11;
-  border: 1em; */
+ flex: 0 0 90% ;
+ margin: 10px ;
 }
 
 #bigwork:hover, .work2:hover, .work3:hover, .work4:hover, .work5:hover
 {
   box-shadow: 0 0 5px #999;
 }
-
-/* WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-@media screen and (max-width: 992px) {
-  header {
-    background: #66bf11;
-  }
-}
-
-/* Large smartphones - navbar changes color 
-@media screen and (max-width: 768px) {
-  nav {
-    background-color: #66bf11;
-  }
-}
-
-/* Small smartphones - image placeholders change color 
-@media screen and (max-width: 576px) {
-  .sample-img {
-    background-color: #66bf11;
-  }
-} */
