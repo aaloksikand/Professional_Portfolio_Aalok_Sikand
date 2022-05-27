@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <title>Aalok "all-oak" Sikand</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Aalok "all-oak" Sikand</title> 
   </head>
-
   <body>
     <header>
-      <!--The h1 tag should be used for the most important heading-->
-      <h1>Student Bio</h1>
-    </header>
-
-    <!-- Section 1: Bio -->
-    <section>
-      <h2>Your Name</h2>
-      <img src="https://via.placeholder.com/200" alt="Your Name"/>
-      <p>Write a short paragraph or two about yourself</p>
-    </section>
-
-    <section>
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">aalok.sikand@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">Github link</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      <h1 class="titleBoxes">Aalok "All-Oak" Sikand</h1>  <!--This presents employer with developer's name-->
+          <nav>  
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a> <!--WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section-->
+                </li>
+                <li>
+                    <a href="#my-work">My Work</a> </li><!--WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications-->
+                <li>
+                    <a href="#contact-me">Contact Me</a> <!--WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section-->
+                </li>
+                <li>
+                  <a href="#resume">Resume</a> <!--WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section-->
+                </li>
+            </ul>
+        </nav>
       </ul>
+    </nav>
+    </header>
+    <figure>
+        <img src="./assets/images/oak-tree-main.png" alt="Majestic Oak Tree"> <!--THEN I am presented with a recent photo or avatar. . .-->
+      </figure>
+    <section>
+      <h2 class="sectionHeadings" id="about-me">About Me</h2>
+      <p>Aalok "All-Oak" Sikand is committed to preserving every hotelier's most prcious asset:  time.</p>
     </section>
-  </body>
+
+    <section class="work-container">
+      <h2 class="sectionHeadings" id="my-work">Work</h2>
+      <div id="bigwork">
+        <a href="https://www.facebook.com">
+          <img src="./assets/images/facebook.jfif" alt="Facebook">
+        </a>
+        <figcaption>
+          <h3>Facebook</h3>
+        </figcaption>
+      </div>
+      <div class="work2">
+        <a href="https://www.instagram.com">
+          <img src="./assets/images/instagram.png" alt="Instagram">
+        </a>
+        <figcaption>
+          <h3>Instagram</h3>
+        </figcaption>
+      </div>
+      <div class="work3">
+        <a href="https://www.whatsapp.com">
+          <img src="./assets/images/whatsapp.jfif" alt="Whatsapp">
+        </a>
+        <figcaption>
+          <h3>Whatsapp</h3>
+        </figcaption>
+      </div>
+      <div class="work4">
+        <a href="https://www.oculus.com">
+          <img src="./assets/images/oculus.png" alt="Oculus">
+        </a>
+        <figcaption>
+          <h3>Oculus</h3>
+        </figcaption>
+      </div>
+      <div class="work5">
+        <a href="https://www.messenger.com/?_rdr">
+          <img src="./assets/images/facebooklive.jfif" alt="Facebook Messenger">
+        </a>
+        <figcaption>
+          <h3>Facebook Messenger</h3>
+        </figcaption>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="sectionHeadings" id="contact-me">Contact Me</h3>
+      <ul>
+        <li>(310) 498-1821</li>
+        <li><a href="aalok.sikand@gmail.com">aalok.sikand@gmail.com</a></li>
+        <!-- <li><a href="https://www.github.com/aaloksikand">Github</a></li>
+        <li><a href="https://www.instagram.com/aaloksikand">Instagram</a></li>
+      </ul> -->
+    </section>
+  </main>
+
+</body>
 
 </html>
